@@ -1,73 +1,119 @@
-# React + TypeScript + Vite
+# crowdintest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application with internationalization (i18n) support for testing integration between Crowdin and GitHub.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ **Multi-language support**: English (en-US) and Thai (th-TH)
+- ✅ **Modern UI**: Built with Mantine UI components
+- ✅ **Internationalization**: Using i18next and react-i18next
+- ✅ **TypeScript**: Full TypeScript support
+- ✅ **Language Detection**: Automatic language detection and localStorage persistence
+- ✅ **Vite**: Fast development and build with Vite
 
-## React Compiler
+## Screenshots
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### English Version (en-US)
+![English Version](https://github.com/user-attachments/assets/19f63155-6d47-4ae5-86f9-829ad320031c)
 
-## Expanding the ESLint configuration
+### Thai Version (th-TH)
+![Thai Version](https://github.com/user-attachments/assets/2e8e8232-30db-4818-9233-f520baa16a6f)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Node.js (v18 or higher recommended)
+- npm or yarn
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/thanakrit07/crowdintest.git
+cd crowdintest
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Install dependencies:
+```bash
+npm install
 ```
+
+### Development
+
+Start the development server:
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173/`
+
+### Build
+
+Build the application for production:
+```bash
+npm run build
+```
+
+### Preview
+
+Preview the production build:
+```bash
+npm run preview
+```
+
+### Lint
+
+Run ESLint to check code quality:
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```
+crowdintest/
+├── src/
+│   ├── assets/          # Static assets
+│   ├── App.tsx          # Main application component
+│   ├── App.css          # Application styles
+│   ├── i18n.ts          # i18next configuration and translations
+│   ├── main.tsx         # Application entry point
+│   └── index.css        # Global styles
+├── public/              # Public assets
+├── index.html           # HTML template
+├── package.json         # Project dependencies and scripts
+├── tsconfig.json        # TypeScript configuration
+└── vite.config.ts       # Vite configuration
+```
+
+## Technologies Used
+
+- **React 19**: UI library
+- **TypeScript**: Type-safe JavaScript
+- **Vite**: Build tool and dev server
+- **i18next**: Internationalization framework
+- **react-i18next**: React bindings for i18next
+- **Mantine**: React components library
+- **Tabler Icons**: Icon library for Mantine
+
+## Adding New Languages
+
+To add a new language:
+
+1. Open `src/i18n.ts`
+2. Add a new language object in the `resources` constant:
+```typescript
+'language-code': {
+  translation: {
+    // your translations
+  }
+}
+```
+3. Add the language code to `supportedLngs` array
+4. Update the language selector in `src/App.tsx`
+
+## License
+
+This project is for testing purposes.
+
