@@ -1,0 +1,16 @@
+{
+  "welcome": "ยินดีต้อนรับสู่ React + i18next + Mantine",
+  "description": "นี่คือแอปพลิเคชัน React แบบง่ายที่รองรับหลายภาษา",
+  "counter": "ตัวนับ",
+  "count": "จำนวน {{count}}",
+  "increment": "เพิ่ม",
+  "decrement": "ลด",
+  "reset": "รีเซ็ต",
+  "selectLanguage": "เลือกภาษา",
+  "currentLanguage": "ภาษาปัจจุบัน",
+  "features": "คุณสมบัติ",
+  "feature1": "รองรับหลายภาษา (อังกฤษและไทย)",
+  "feature2": "UI ที่ทันสมัยด้วย Mantine",
+  "feature3": "i18next สำหรับการจัดการหลายภาษา",
+  "feature4": "รองรับ TypeScript"
+}
