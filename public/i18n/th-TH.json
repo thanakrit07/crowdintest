@@ -1,7 +1,7 @@
 {
-  "welcome": "Welcome to React + i18next + Mantine",
-  "description": "This is a simple React application with internationalization support",
-  "counter": "Counter",
+  "welcome": "ยินดีต้อนรับสู่ React + i18next + Mantine",
+  "description": "นี่คือแอปพลิเคชัน React แบบง่ายที่รองรับหลายภาษา",
+  "counter": "ตัวนับ",
   "count": "Count is {{count}}",
   "increment": "Increment",
   "decrement": "ลดดดด",
@@ -12,9 +12,5 @@
   "feature1": "Multi-language support (English & Thai)",
   "feature2": "Modern UI with Mantine components",
   "feature3": "i18next for internationalization",
-  "feature4": "TypeScript support",
-  "summaryTitle": "สรุปรายการ",
-  "totalPrice": "รวมค่าอาหาร",
-  "total": "total",
-  "settingUsage": "ตั้งค่าการใช้งาน"
+  "feature4": "TypeScript support"
 }
