@@ -1,0 +1,16 @@
+{
+  "welcome": "Welcome to React + i18next + Mantine",
+  "description": "This is a simple React application with internationalization support",
+  "counter": "Counter",
+  "count": "Count is {{count}}",
+  "increment": "Increment",
+  "decrement": "Decrement",
+  "reset": "Reset",
+  "selectLanguage": "Select Language",
+  "currentLanguage": "Current Language",
+  "features": "Features",
+  "feature1": "Multi-language support (English & Thai)",
+  "feature2": "Modern UI with Mantine components",
+  "feature3": "i18next for internationalization",
+  "feature4": "TypeScript support"
+}
