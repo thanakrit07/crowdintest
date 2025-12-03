@@ -1,3 +1,3 @@
 files:
-  - source: /public/i18n/source.json
+  - source: /public/source/LIFF.json
     translation: /%original_path%/%locale%.json
