@@ -12,5 +12,9 @@
   "feature1": "Multi-language support (English & Thai)",
   "feature2": "Modern UI with Mantine components",
   "feature3": "i18next for internationalization",
-  "feature4": "TypeScript support"
+  "feature4": "TypeScript support",
+  "summaryTitle": "สรุปรายการ",
+  "totalPrice": "รวมค่าอาหาร",
+  "total": "total",
+  "settingUsage": "Setting Usage"
 }
